@@ -6,9 +6,13 @@ module.exports = function(grunt) {
 		mocha_script: {
 			compile: {
 				options: {},
-				files: {
-					"dist/compiled.js": ["src/{,*/}*.mocha"]
-				}
+				files: [{
+                    expand: true,
+                    cwd: 'src',
+                    src: '{,*/}*.mocha',
+                    dest: 'dist',
+                    ext: '.js'
+                }]
 			}
 		},
 
