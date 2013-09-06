@@ -3,11 +3,11 @@
   "version": "0.0.0",
   "description": "ERROR: No README.md file found!",
   "main": "compiled.js",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-    "grunt-mocha-script": "~0.1.0"
+    "grunt-mocha-script": "~0.1.0",
     "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.3"
   },
   "scripts": {
     "test": "test"

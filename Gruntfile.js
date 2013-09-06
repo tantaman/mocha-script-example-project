@@ -8,9 +8,9 @@ module.exports = function(grunt) {
 				options: {},
 				files: [{
                     expand: true,
-                    cwd: 'src',
+                    cwd: 'app/mocha-scripts',
                     src: '{,*/}*.mocha',
-                    dest: 'dist',
+                    dest: 'app/compiled-scripts',
                     ext: '.js'
                 }]
 			}
@@ -18,7 +18,7 @@ module.exports = function(grunt) {
 
 		watch: {
 			scripts: {
-				files: ["src/{,*/}*.mocha"],
+				files: ["app/mocha-scripts/{,*/}*.mocha"],
 				tasks: ["compile"]
 			}
 		}
